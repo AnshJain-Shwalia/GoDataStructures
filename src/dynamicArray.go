@@ -47,7 +47,7 @@ func (da *DynamicArray[T]) IsEmpty() bool {
 }
 
 func (da *DynamicArray[T]) Clear() {
-	da.data = make([]T)
+	da.data = make([]T, 0)
 }
 
 func (da *DynamicArray[T]) String() string {
