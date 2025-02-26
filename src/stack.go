@@ -4,6 +4,10 @@ type Stack[T any] struct {
 	data []T
 }
 
+func NewStack[T any]() *Stack[T] {
+	return &Stack[T]{}
+}
+
 type Err string
 
 func (err Err) Error() string {
